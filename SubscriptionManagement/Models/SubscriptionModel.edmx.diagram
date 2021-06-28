@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="74ebbfdd76e04143b12a2fb9ca6c4aa6" Name="Diagram1">
+        <EntityTypeShape EntityType="CentralizedCustomers_DBModel.Asp_UserSubscriptions" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CentralizedCustomers_DBModel.Cmp_Subscriptions" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CentralizedCustomers_DBModel.CustomersCompany" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CentralizedCustomers_DBModel.User" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CentralizedCustomers_DBModel.AspNetRole" Width="1.5" PointX="3.375" PointY="8.5" />
+        <EntityTypeShape EntityType="CentralizedCustomers_DBModel.AspNetUserClaim" Width="1.5" PointX="7.875" PointY="7" />
+        <EntityTypeShape EntityType="CentralizedCustomers_DBModel.AspNetUserLogin" Width="1.5" PointX="7.875" PointY="9.75" />
+        <EntityTypeShape EntityType="CentralizedCustomers_DBModel.AspNetUser" Width="1.5" PointX="5.625" PointY="7.375" />
+        <AssociationConnector Association="CentralizedCustomers_DBModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="CentralizedCustomers_DBModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="CentralizedCustomers_DBModel.AspNetUserRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

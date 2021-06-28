@@ -1,0 +1,124 @@
+@import "vars", "minCLasss", "tableStyle", "login_form";
+
+
+
+
+// subscriptions_section
+.subscriptions_section {
+    .subscriptions_min_box {
+        background-color: $white-color;
+        border-radius: 4px;
+        padding: 20px 20px;
+
+
+        .min_title_box{
+            padding: 0 0 10px 0;
+            border-bottom: 1px solid #ddd;
+            margin: 0 0 20px 0;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            &.one_item{
+                justify-content: center;
+            }
+            .title{
+                font-size: 22px;
+                font-weight: 600;
+                color:rgba($min-color,1);
+            }
+        }
+
+
+        .subscriptions_box {
+            padding: 10px 0 0;
+            box-shadow: 0 3px 8px 0px rgba($min-color, 0.3);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 5px 0;
+            @extend%trans-4;
+            &:hover{
+                transform: translateY(-3px);
+                box-shadow: 0 3px 10px 0px rgba($min-color, 0.5);
+            }
+            .subscriptions_box_content {
+                padding: 10px;
+                text-align: center;
+
+                img {
+                    height: 66px;
+                    margin: 0 0 22px;
+                }
+
+                .title_text {
+                    color: $min-color;
+                    i {
+                        font-size: 20px;
+                        padding: 0 3px;
+                    }
+                    .text {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
+
+                .number_box {
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 10px 0;
+                }
+
+                .date_title {
+                    color: $min-color;
+                    i {
+                        font-size: 14px;
+                        padding: 0 3px;
+                    }
+                    .text {
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .button_box{
+                display: flex;
+                
+                border-bottom: 1px solid $white-color;
+                a{
+                    &:last-of-type{
+                        border-right: 1px solid $white-color
+                    }
+                }
+            }
+            
+            .box_link{
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                padding: 6px 2px;
+                background-color: rgba($min-color,1);
+                color: $white-color;
+                text-align: center ;
+                @extend%trans-4;
+                align-items: center;
+                &:hover{
+                    background-color: $black-color;
+                }
+                .text_title{
+                    font-size: 16px;
+                }
+                .number_text{
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+// subscriptions_section
+
+// to extent
+
+%trans-4 {
+    transition: 0.4s all ease-in-out;
+}

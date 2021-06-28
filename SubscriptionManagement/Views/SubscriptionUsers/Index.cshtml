@@ -1,0 +1,89 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="subscriptions_min_box">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="min_title_box">
+                        <h5 class="title">
+                            المستخدمــين
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <table id="usersTable" class="dataTable" style="width: 100%;" role="grid" aria-describedby="usersTable_info">
+                        <thead>
+                            <tr role="row">
+                                @*<%--
+                                <th class="details-control sorting_disabled" rowspan="1" colspan="1" aria-label="" style="width: 16px;"></th>--%>*@
+                                <th style="display: none;" class="sorting sorting_asc" tabindex="0" aria-controls="usersTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="width: 30%;" aria-sort="ascending">الاسم</th>
+                                <th style="display: none;" class="sorting sorting_asc" tabindex="0" aria-controls="usersTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="width: 30%;" aria-sort="ascending">الاسم</th>
+                                <th style="display: none;" class="sorting sorting_asc" tabindex="0" aria-controls="usersTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="width: 30%;" aria-sort="ascending">الاسم</th>
+
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="usersTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="width: 30%;" aria-sort="ascending">الاسم</th>
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="usersTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="width: 20%;" aria-sort="ascending">الشركه </th>
+                                <th class="sorting" tabindex="0" aria-controls="usersTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 18%;">إسم المستخدم</th>
+                                <th class="sorting" tabindex="0" aria-controls="usersTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 20%;">البريد الإلكترونى</th>
+                                <th class="sorting" tabindex="0" aria-controls="usersTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 28%;">الحالة</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="usersTableModal" tabindex="-1" role="dialog" aria-labelledby="usersTableModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">تغير الحــالة</h5>
+                <button type="button" id="CloseModal" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-12" style="display: none;">
+                            <input type="text" id="UserID" />
+                            <input type="text" id="UserRecID" />
+
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="statse">الحالة</label>
+                                <select class="select2" name="statse" id="Subscriptionstatus">
+                                    <option value="-1">إختر</option>
+                                    <option value="0">فعال</option>
+                                    <option value="1">غير فعال</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <button type="button" class="buttom_style" onclick="SaveUserSubscripton();">حفظ</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script src="~/Scripts/scripts/SubscriptionUsers.js"></script>

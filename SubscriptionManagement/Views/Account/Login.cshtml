@@ -1,0 +1,84 @@
+﻿@using SubscriptionManagement.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+
+}
+<link href="~/assets/css/style.css" rel="stylesheet" />
+@*<h2>@ViewBag.Title.</h2>*@
+
+
+
+<div id="page" class="hfeed site">
+    <div class="main-container">
+        <main class="main wrapper">
+            <div class="subscriptions_section login_section">
+                <div class="container">
+                    @*<div class="row">
+                        <div class="col-md-12">
+                            <div class="logo-box">
+                                <a href="#" class="logo-link">
+                                    <img src="~/assets/img/Wataad logopng.png" alt="" class="img-fluid" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>*@
+                    <div class="row" style="justify-content: center;">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="subscriptions_min_box">
+
+                                <div class="min_title_box one_item">
+                                    <h5 class="title">
+                                        تسجيل الدخول
+                                    </h5>
+                                </div>
+                                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "login_form", role = "form" }))
+                                {
+
+                                    @Html.AntiForgeryToken()
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    <div class="form-group">
+                                        <label for="Email"><i class="fas fa-user"></i>Email</label>
+                                        <input type="text" name="Email" id="Email" class="form-control" aria-describedby="helpId">
+                                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                    </div>
+
+
+
+                                    <div class="form-group devo-password-input">
+                                        <label for="Password"><i class="fas fa-lock"></i>Password</label>
+                                        <input type="password" name="Password" id="Password" class="form-control formal password-input nput" aria-describedby="helpId">
+                                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                        @*<i toggle="#Password" class="fa fa-fw fa-eye field-icon toggle-password"></i>*@
+                                    </div>
+
+
+
+                                    <div class="rong_passrwoed" style="display:none;">
+                                        <span>
+                                            Wrong UserName OR Password
+                                        </span>
+                                    </div>
+
+                                    <button class="login_button" type="submit">Log In</button>
+
+                                }
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script src="~/assets/js/script.js"></script>

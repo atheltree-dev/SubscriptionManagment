@@ -1,0 +1,254 @@
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: unset;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+// var
+$white-color:#fff;
+$black-color:#000;
+$blue-color:#1e3056;
+$gray-color:#ddd;
+$red-color:#ba2c63;
+$gold-color:#fab118;
+
+
+// var
+
+
+// min class
+
+body{
+    background: linear-gradient(108deg,#1e3056 0%,#922650 100%);
+    html[dir="ltr"] & {
+        font-family: "Poppins", sans-serif;
+    }
+    html[dir="rtl"] & {
+        font-family: "Tajawal", sans-serif;
+    }
+}
+
+
+.trans-4{
+    transition: .4s all ease-in-out;
+}
+
+.padd-40{
+    padding: 40px 0;
+}
+
+.marg-40{
+    margin: 40px 0;
+}
+
+.prag{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba($white-color, 1.0);
+}
+
+.ar-content{
+    font-family: "Tajawal", sans-serif;
+}
+
+.width-center{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.border-5r{
+    border-radius: 5px;
+}
+
+
+.after-img{
+    position: relative;
+    html[dir="rtl"] & {
+        padding: 0 40px 0 0;
+    }
+    html[dir="ltr"] & {
+        padding: 0 0 0 40px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        background-image: url('../img/after.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        html[dir="rtl"] & {
+            right: 0;
+            left: unset;
+        }
+        html[dir="ltr"] & {
+            right: unset;
+            left: 0;
+        }
+    }
+}
+
+
+input{
+    @extend.trans-4;
+    &:focus{
+        outline: 0 !important;
+        box-shadow: unset !important;
+        border: 1px solid rgba($gray-color, 1.0) !important;
+    }
+}
+
+.link-style{
+    padding: 8px 18px;
+    border: 1px solid rgba($white-color, 1.0);
+    @extend.border-5r , .trans-4 , .prag;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover{
+        color: rgba($blue-color, 1.0);
+        background-color: rgba($gold-color, 1.0);
+        border-color:rgba($gold-color, 1.0) ;
+    }
+}
+
+// min class
+
+// header-container
+
+.header-container{
+    padding: 30px 0;
+    .logo-box{
+        .logo-link{
+            img{
+                height: 80px;
+            }
+        }
+    }
+}
+// header-container
+
+
+
+// min-content
+
+.min-content{
+    padding: 30px;
+    .logIn-img{
+        text-align: center;
+        .cherMan-img{
+            img{
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .copany-img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @extend.width-center;
+        img{
+            object-fit: contain;
+            height: 54px;
+            margin: 10px;
+            width: 111px;
+        }
+    }
+
+
+    // cherMan-massge
+    .cherMan-massge{
+        @extend.padd-40;
+        .prag{
+            @extend.width-center, .after-img;
+            text-align: justify;
+        }
+    }
+    // cherMan-massge
+
+
+
+    // logIn-form-box
+    .logIn-form-box{
+        @extend.padd-40;
+        width: 100%;
+        border: 1px solid rgba($gray-color, .5);
+        border-radius: 5px;
+        // height: 100%;
+        .title-box{
+            .title{
+                font-size: 40px;
+                font-weight: 600;
+                color: rgba($white-color, 1.0);
+                padding-bottom: 40px;
+                text-shadow: -5px 3px 3px rgba($black-color, .5);
+            }
+        }
+        .logIn-form{
+            @extend.width-center;
+            .form-group{
+                label{
+                    @extend.prag;
+                }
+                input{
+                    background-color: transparent;
+                    color: rgba($white-color, 1.0);
+                    &::placeholder{
+                        font-size: 13px;
+                        color: rgba($white-color, 1.0);
+                    }
+                }
+            }
+        }
+    }
+    
+    // logIn-form-box
+}
+
+// min-content
+
+@media(max-width:992px){
+    .order-md{
+        order: -1;
+    }
+}
+
+@media(max-width:772px){
+
+    .width-center{
+        width: 100%;
+    }
+    .prag{
+        font-size: 12px;
+    }
+    .min-content{
+        .logIn-form-box{
+            padding: 20px;
+        }
+        .logIn-form-box {
+            .title-box{
+                 .title{
+                    font-size: 22px;
+                    padding-bottom: 23px;
+                 }
+                }
+            }
+    }
+}

@@ -1,0 +1,167 @@
+﻿@*@using SubscriptionManagement.Models.DL
+@model List<CompanySubscriptionDL>*@
+@{
+    var StatusClass = "";
+    var ActiveStatus = "";
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="subscriptions_min_box">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="min_title_box">
+                        <h5 class="title">الاشتراكــــات</h5>
+                        <a href="CompanySubscription/AddCompanySubscription" id="btnAddSubscription" class="buttom_style">اضف جديد <i class="fa fa-plus" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <table id="statustTable" class="dataTable" style="width: 100%;" role="grid" aria-describedby="statustTable_info">
+                        <thead>
+                            <tr role="row">
+                                <th class="details-control sorting_disabled" rowspan="1" colspan="1" aria-label="" style="width: 16px;"></th>
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="statustTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="display: none; width: 20%;" aria-sort="ascending">الاسم </th>
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="statustTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="display: none; width: 20%;" aria-sort="ascending">الاسم </th>
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="statustTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="display: none; width: 20%;" aria-sort="ascending">الاسم </th>
+
+                                <th class="sorting sorting_asc" tabindex="0" aria-controls="statustTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="width: 20%;" aria-sort="ascending">الاسم </th>
+                                <th class="sorting" tabindex="0" aria-controls="statustTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 10%;">الكود</th>
+                                <th class="sorting" tabindex="0" aria-controls="statustTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 20%;">تاريخ البداية </th>
+                                <th class="sorting" tabindex="0" aria-controls="statustTable" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 20%;">تاريخ النهايه</th>
+                                <th class="sorting" tabindex="0" aria-controls="statustTable" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 10%;">العدد</th>
+                                @*<%--
+                                    <th class="sorting" tabindex="0" aria-controls="statustTable" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 10%;">النوع</th>--%>*@
+                                <th class="sorting" tabindex="0" aria-controls="statustTable" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 50%;">الحالة</th>
+                                <th class="sorting" tabindex="0" aria-controls="statustTable" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 30%;">النوع</th>
+                                <th class="sorting" tabindex="0" aria-controls="statustTable" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 30%;">اذهب</th>
+                            </tr>
+                        </thead>
+                        <tbody id="CompanytableBody">
+
+                            @*@foreach (var item in Model)
+                            {
+
+
+
+
+                                if (@item.Status == 0)
+                                {
+                                    StatusClass = "style='color: #2dcd7a;'";
+                                    ActiveStatus = "فعال";
+                                }
+                                else if (@item.Status == 1)
+                                {
+                                    StatusClass = "style='color:#000;'";
+                                    ActiveStatus = "انتهت الصلاحية";
+
+                                }
+                                else if (@item.Status == 2)
+                                {
+                                    StatusClass = "style='color: #ed5f5f;'";
+                                    ActiveStatus = "لم يتم الدفع";
+
+                                }
+                                else if (@item.Status == 3)
+                                {
+                                    StatusClass = "style='color: #FF0000;'";
+                                    ActiveStatus = "انتهى الاشتراك";
+
+                                }
+
+
+                                <tr class="odd">
+
+
+                                    <td class="details-control"></td>
+
+                                    <td class="Subscription_Id" subProp="@item.Subscription_Id " style="display:none;"> @item.Subscription_Id </td>
+
+                                    <td class="RecID" RecIDProp="@item.Rec_Id" style="display:none;"> @item.Rec_Id </td>
+
+                                    <td class="Status" StatusProp="@item.Status " style="display:none;">@item.Status</td>
+
+
+
+                                    <td class="sorting_1"> @item.Commerical_Name </td>
+
+                                    <td> @item.Subscription_Code </td>
+
+                                    <td> @item.Start_Date</td>
+
+                                    <td>@item.End_Date  </td>
+
+                                    <td> @item.Subscription_Count </td>
+
+
+                                    <td class="pop_up_opener" data-toggle="modal" data-target="#usersTableModal" StatusClass onclick="UpdateStatus(this);"><span> ActiveStatus </span>  <i class="fas fa-highlighter"></i></td>
+
+                                    <td>مجموعة</td>
+
+                                    <td><a href="./billsTable.html" class="table_link">الفواتير</a></td>
+
+                                </tr>
+
+
+                            }*@
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="usersTableModal" tabindex="-1" role="dialog" aria-labelledby="usersTableModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">تغير الحــالة</h5>
+                <button type="button" id="CloseModal" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-12" style="display: none;">
+                            <input type="text" id="SubscriptionID" />
+                            <input type="text" id="SubscriptionRecID" />
+
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="statse">الحالة</label>
+                                <select class="select2" name="statse" id="Subscriptionstatus">
+                                    <option value="-1">إختر</option>
+                                    <option value="0">فعال</option>
+                                    <option value="1">انتهت الصلاحية</option>
+                                    <option value="2">لم يتم الدفع</option>
+                                    <option value="3">انتهى الاشتراك</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <button type="button" class="buttom_style" onclick="SaveCompanySubscripton();">حفظ</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Modal -->
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/scripts/CompanySubscription.js"></script>

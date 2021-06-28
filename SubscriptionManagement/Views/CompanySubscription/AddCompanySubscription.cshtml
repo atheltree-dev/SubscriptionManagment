@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "AddCompanySubscription";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="subscriptions_min_box">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="min_title_box">
+                        <h5 class="title">
+                            اضف جديد
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="form_style">
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="number">العدد</label>
+                                    <input type="number" name="Subscription_Count" id="Subscription_Count" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="code">الكود</label>
+                                    <input type="text" name="Subscription_Code" id="Subscription_Code" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="stratDate">تاريخ البدايه</label>
+                                    <input type="text" name="Start_Date" id="Start_Date" class="form-control date_picker" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="endDate">تاريخ النهاية</label>
+                                    <input type="text" name="End_Date" id="End_Date" class="form-control date_picker" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="statse">الحالة</label>
+                                    <select class="select2" name="Status" id="Status">
+                                        <option value="-1">إختر</option>
+                                        <option value="0">فعال</option>
+                                        <option value="1">انتهت الصلاحية</option>
+                                        <option value="2">لم يتم الدفع</option>
+                                        <option value="3">انتهى الاشتراك</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-12 text-right">
+                <button type="button" class="buttom_style" onclick="AddUserSubscripton();">حفظ</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script src="~/Scripts/scripts/AddCompanySubscription.js"></script>

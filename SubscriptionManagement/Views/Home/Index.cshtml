@@ -1,0 +1,60 @@
+﻿@using SubscriptionManagement.Models
+@model  List<CustomersCompany>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="subscriptions_min_box">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="min_title_box">
+                        <h5 class="title">الاشتراكــــات</h5>
+                        <a href="/Home/AddSubscription" class="buttom_style">اضف جديد <i class="fa fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="CustomerCompany">
+
+                @*@foreach (var item in Model)
+                {
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="subscriptions_box">
+                            <div class="subscriptions_box_content">
+                                <img src="/@item.LogoPath" alt="" class="img-fluid logo_img" />
+                                <h4 class="title_text"><span class="text"> @item.Commerical_Name_En </span></h4>
+                                <h4 class="title_text"><span class="text"> @item.Commerical_Name </span></h4>
+                                <div class="number_box">
+                                    <h4 class="date_title">
+                                        <i class="fas fa-calendar-week"></i>
+                                        <span class="text">
+                                            <script>WriteDateToPageNum('@item.Renewal_Date')</script>
+                                        </span>
+                                    </h4>
+                                </div>
+
+                            </div>
+                            <div class="button_box">
+                                <a href="/CompanySubscription/Index?CompanyID=@item.Id" class="box_link">
+                                    <span class="text_title">الاشتراكـات</span>
+                                </a>
+                                <a href="javascript:;" class="box_link">
+                                    <span class="text_title">الفواتـير</span>
+                                </a>
+                            </div>
+                            <a href="/SubscriptionUsers/Index?CompanyID=@item.Id" class="box_link">
+                                <span class="text_title">المستخدميــن</span>
+                            </a>
+                        </div>
+                    </div>
+                }*@
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+
+<script src="~/Scripts/scripts/Index.js"></script>

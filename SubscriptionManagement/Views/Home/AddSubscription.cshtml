@@ -1,0 +1,114 @@
+﻿
+@{
+    ViewBag.Title = "AddSubscription";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="subscriptions_min_box">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="min_title_box">
+                        <h5 class="title">
+                            اضف جديد
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    @*<form action="javascript:;" class="form_style">*@
+                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form_style", role = "form" }))
+                    {
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Commerical_Name_En">الاسم بالانجليزيه</label>
+                                    <input type="text" name="Commerical_Name_En" id="Commerical_Name_En" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Commerical_Name">الاسم بالعربية</label>
+                                    <input type="text" name="Commerical_Name" id="Commerical_Name" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="number">العدد</label>
+                                    <input type="number" name="number" id="number" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Customer_Code">الكود</label>
+                                    <input type="number" name="Customer_Code" id="Customer_Code" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Company_Prefix">الاختصار</label>
+                                    <input type="text" name="Company_Prefix" id="Company_Prefix" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Responsible_Tel">رقم التلفون</label>
+                                    <input type="text" name="Responsible_Tel" id="Responsible_Tel" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Responsible_Email">الايمل</label>
+                                    <input type="text" name="Responsible_Email" id="Responsible_Email" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Start_Date">تاريخ البدايه</label>
+                                    <input type="text" name="Start_Date" id="Start_Date" class="form-control date_picker" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Renewal_Date">تاريخ التجديد</label>
+                                    <input type="text" name="Renewal_Date" id="Renewal_Date" class="form-control date_picker" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="End_Date">تاريخ النهاية</label>
+                                    <input type="text" name="End_Date" id="End_Date" class="form-control date_picker" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="pretty form-check answers-value p-default">
+                                        <input type="checkbox" id="Status" class="form-check-input" name="Status" value="checkedValue" />
+                                        <div class="state p-success">
+                                            <label for="chkHasMedicalInsurance" class="form-check-label en_text">
+                                                فعال
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="photoCu">صورة الشركه</label>
+                                    <input type="file" name="LogoPath" id="LogoPath" class="form-control dropify" />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="buttom_style">اضف <i class="fa fa-plus" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

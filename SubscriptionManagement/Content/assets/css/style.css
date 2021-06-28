@@ -1,0 +1,408 @@
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: unset;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(108deg, #1e3056 0%, #922650 100%);
+}
+
+html[dir="ltr"] body {
+  font-family: "Poppins", sans-serif;
+}
+
+html[dir="rtl"] body {
+  font-family: "Tajawal", sans-serif;
+}
+
+html[dir="rtl"] .pretty .state label:before, html[dir="rtl"] .pretty .state label:after {
+  left: unset;
+  right: 0;
+}
+
+.trans-4, input, textarea, .link-style, .header-container .lang-box .lang-link {
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+}
+
+.padd-40, .min-content .cherMan-massge, .min-content .logIn-form-box {
+  padding: 40px 0;
+}
+
+.marg-40, .survey-section .survey-form {
+  margin: 40px 0;
+}
+
+.prag, .link-style, .header-container .lang-box .lang-link, .min-content .logIn-form-box .logIn-form .form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.ar-content {
+  font-family: "Tajawal", sans-serif;
+}
+
+.width-center, .min-content .copany-img, .min-content .cherMan-massge .prag, .min-content .cherMan-massge .link-style, .min-content .cherMan-massge .header-container .lang-box .lang-link, .header-container .lang-box .min-content .cherMan-massge .lang-link, .min-content .cherMan-massge .logIn-form-box .logIn-form .form-group label, .min-content .logIn-form-box .logIn-form .form-group .cherMan-massge label, .min-content .logIn-form-box .logIn-form, .survey-section .intro-box .prag, .survey-section .intro-box .link-style, .survey-section .intro-box .header-container .lang-box .lang-link, .header-container .lang-box .survey-section .intro-box .lang-link, .survey-section .intro-box .min-content .logIn-form-box .logIn-form .form-group label, .min-content .logIn-form-box .logIn-form .form-group .survey-section .intro-box label {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.border-5r, .link-style, .survey-section .survey-form .survey-box, .survey-section .survey-form .survey-box .question-box {
+  border-radius: 5px;
+}
+
+.after-img, .min-content .cherMan-massge .prag, .min-content .cherMan-massge .link-style, .min-content .cherMan-massge .header-container .lang-box .lang-link, .header-container .lang-box .min-content .cherMan-massge .lang-link, .min-content .cherMan-massge .logIn-form-box .logIn-form .form-group label, .min-content .logIn-form-box .logIn-form .form-group .cherMan-massge label {
+  position: relative;
+}
+
+html[dir="rtl"] .after-img, html[dir="rtl"] .min-content .cherMan-massge .prag, .min-content .cherMan-massge html[dir="rtl"] .prag, html[dir="rtl"] .min-content .cherMan-massge .link-style, .min-content .cherMan-massge html[dir="rtl"] .link-style, html[dir="rtl"] .min-content .cherMan-massge .header-container .lang-box .lang-link, .min-content .cherMan-massge .header-container .lang-box html[dir="rtl"] .lang-link, html[dir="rtl"] .header-container .lang-box .min-content .cherMan-massge .lang-link, .header-container .lang-box .min-content .cherMan-massge html[dir="rtl"] .lang-link, html[dir="rtl"] .min-content .cherMan-massge .logIn-form-box .logIn-form .form-group label, .min-content .cherMan-massge .logIn-form-box .logIn-form .form-group html[dir="rtl"] label, html[dir="rtl"] .min-content .logIn-form-box .logIn-form .form-group .cherMan-massge label, .min-content .logIn-form-box .logIn-form .form-group .cherMan-massge html[dir="rtl"] label {
+  padding: 0 40px 0 0;
+}
+
+html[dir="ltr"] .after-img, html[dir="ltr"] .min-content .cherMan-massge .prag, .min-content .cherMan-massge html[dir="ltr"] .prag, html[dir="ltr"] .min-content .cherMan-massge .link-style, .min-content .cherMan-massge html[dir="ltr"] .link-style, html[dir="ltr"] .min-content .cherMan-massge .header-container .lang-box .lang-link, .min-content .cherMan-massge .header-container .lang-box html[dir="ltr"] .lang-link, html[dir="ltr"] .header-container .lang-box .min-content .cherMan-massge .lang-link, .header-container .lang-box .min-content .cherMan-massge html[dir="ltr"] .lang-link, html[dir="ltr"] .min-content .cherMan-massge .logIn-form-box .logIn-form .form-group label, .min-content .cherMan-massge .logIn-form-box .logIn-form .form-group html[dir="ltr"] label, html[dir="ltr"] .min-content .logIn-form-box .logIn-form .form-group .cherMan-massge label, .min-content .logIn-form-box .logIn-form .form-group .cherMan-massge html[dir="ltr"] label {
+  padding: 0 0 0 40px;
+}
+
+.after-img::after, .min-content .cherMan-massge .prag::after, .min-content .cherMan-massge .link-style::after, .min-content .cherMan-massge .header-container .lang-box .lang-link::after, .header-container .lang-box .min-content .cherMan-massge .lang-link::after, .min-content .cherMan-massge .logIn-form-box .logIn-form .form-group label::after, .min-content .logIn-form-box .logIn-form .form-group .cherMan-massge label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/after.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+html[dir="rtl"] .after-img::after, html[dir="rtl"] .min-content .cherMan-massge .prag::after, .min-content .cherMan-massge html[dir="rtl"] .prag::after, html[dir="rtl"] .min-content .cherMan-massge .link-style::after, .min-content .cherMan-massge html[dir="rtl"] .link-style::after, html[dir="rtl"] .min-content .cherMan-massge .header-container .lang-box .lang-link::after, .min-content .cherMan-massge .header-container .lang-box html[dir="rtl"] .lang-link::after, html[dir="rtl"] .header-container .lang-box .min-content .cherMan-massge .lang-link::after, .header-container .lang-box .min-content .cherMan-massge html[dir="rtl"] .lang-link::after, html[dir="rtl"] .min-content .cherMan-massge .logIn-form-box .logIn-form .form-group label::after, .min-content .cherMan-massge .logIn-form-box .logIn-form .form-group html[dir="rtl"] label::after, html[dir="rtl"] .min-content .logIn-form-box .logIn-form .form-group .cherMan-massge label::after, .min-content .logIn-form-box .logIn-form .form-group .cherMan-massge html[dir="rtl"] label::after {
+  right: 0;
+  left: unset;
+}
+
+html[dir="ltr"] .after-img::after, html[dir="ltr"] .min-content .cherMan-massge .prag::after, .min-content .cherMan-massge html[dir="ltr"] .prag::after, html[dir="ltr"] .min-content .cherMan-massge .link-style::after, .min-content .cherMan-massge html[dir="ltr"] .link-style::after, html[dir="ltr"] .min-content .cherMan-massge .header-container .lang-box .lang-link::after, .min-content .cherMan-massge .header-container .lang-box html[dir="ltr"] .lang-link::after, html[dir="ltr"] .header-container .lang-box .min-content .cherMan-massge .lang-link::after, .header-container .lang-box .min-content .cherMan-massge html[dir="ltr"] .lang-link::after, html[dir="ltr"] .min-content .cherMan-massge .logIn-form-box .logIn-form .form-group label::after, .min-content .cherMan-massge .logIn-form-box .logIn-form .form-group html[dir="ltr"] label::after, html[dir="ltr"] .min-content .logIn-form-box .logIn-form .form-group .cherMan-massge label::after, .min-content .logIn-form-box .logIn-form .form-group .cherMan-massge html[dir="ltr"] label::after {
+  right: unset;
+  left: 0;
+}
+
+.wrong-label {
+  margin: 0 0 10px;
+}
+
+.wrong-label .wrong-masseg {
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: red;
+}
+
+input, textarea {
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-size: 13px;
+  color: white;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-size: 13px;
+  color: white;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  font-size: 13px;
+  color: white;
+}
+
+input::placeholder, textarea::placeholder {
+  font-size: 13px;
+  color: white;
+}
+
+input:focus, textarea:focus {
+  outline: 0 !important;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+  border: 1px solid #dddddd !important;
+}
+
+textarea {
+  padding: 10px;
+  width: 100%;
+  height: 120px;
+}
+
+.link-style {
+  padding: 8px 18px;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.link-style:hover {
+  color: #1e3056;
+  background-color: #fab118;
+  border-color: #fab118;
+}
+
+.header-container {
+  padding: 30px 0;
+}
+
+.header-container .logo-box .logo-link img {
+  height: 80px;
+}
+
+.header-container .lang-box {
+  text-align: end;
+}
+
+.header-container .lang-box .lang-link:hover {
+  color: #fab118;
+}
+
+html[dir="ltr"] .header-container .lang-box .lang-link {
+  font-family: "Tajawal", sans-serif;
+}
+
+html[dir="rtl"] .header-container .lang-box .lang-link {
+  font-family: "Poppins", sans-serif;
+}
+
+.min-content {
+  padding: 30px;
+}
+
+.min-content .logIn-img {
+  text-align: center;
+}
+
+.min-content .logIn-img .cherMan-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.min-content .copany-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.min-content .copany-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 54px;
+  margin: 10px;
+  width: 111px;
+}
+
+.min-content .cherMan-massge .prag, .min-content .cherMan-massge .link-style, .min-content .cherMan-massge .header-container .lang-box .lang-link, .header-container .lang-box .min-content .cherMan-massge .lang-link, .min-content .cherMan-massge .logIn-form-box .logIn-form .form-group label, .min-content .logIn-form-box .logIn-form .form-group .cherMan-massge label {
+  text-align: justify;
+}
+
+.min-content .logIn-form-box {
+  width: 100%;
+  border: 1px solid rgba(221, 221, 221, 0.5);
+  border-radius: 5px;
+}
+
+.min-content .logIn-form-box .title-box .title {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 40px;
+  text-shadow: -5px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.survey-section .intro-box .intro-text {
+  font-size: 34px;
+  font-weight: 600;
+  color: white;
+  text-shadow: -5px 3px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.survey-section .intro-box .prag, .survey-section .intro-box .link-style, .survey-section .intro-box .header-container .lang-box .lang-link, .header-container .lang-box .survey-section .intro-box .lang-link, .survey-section .intro-box .min-content .logIn-form-box .logIn-form .form-group label, .min-content .logIn-form-box .logIn-form .form-group .survey-section .intro-box label {
+  color: #dddddd;
+}
+
+.survey-section .survey-form .survey-box {
+  padding: 20px 70px;
+  border: 1px solid rgba(221, 221, 221, 0.5);
+  position: relative;
+}
+
+.survey-section .survey-form .survey-box:after {
+  content: "";
+  top: 10px;
+  width: 2px;
+  height: calc(100% - 20px) !important;
+  background-color: white;
+  position: absolute;
+}
+
+html[dir="rtl"] .survey-section .survey-form .survey-box:after {
+  right: 20px;
+  left: unset;
+}
+
+html[dir="ltr"] .survey-section .survey-form .survey-box:after {
+  right: unset;
+  left: 20px;
+}
+
+.survey-section .survey-form .survey-box .question-box {
+  border: 1px solid rgba(221, 221, 221, 0.5);
+  margin: 10px 0;
+  position: relative;
+}
+
+.survey-section .survey-form .survey-box .question-box:after {
+  content: "";
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 49px;
+  height: 1px;
+  background-color: rgba(221, 221, 221, 0.5);
+  position: absolute;
+}
+
+html[dir="rtl"] .survey-section .survey-form .survey-box .question-box:after {
+  right: -49px;
+  left: unset;
+}
+
+html[dir="ltr"] .survey-section .survey-form .survey-box .question-box:after {
+  right: unset;
+  left: -49px;
+}
+
+.survey-section .survey-form .survey-box .question-box .question-numder {
+  color: #ba2c63;
+  z-index: 99;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 24px;
+  width: 24px;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  font-weight: 600;
+}
+
+html[dir="ltr"] .survey-section .survey-form .survey-box .question-box .question-numder {
+  left: -37px;
+}
+
+html[dir="rtl"] .survey-section .survey-form .survey-box .question-box .question-numder {
+  right: -37px;
+  left: unset;
+}
+
+.survey-section .survey-form .survey-box .question-box .question-label-box {
+  padding: 20px;
+}
+
+.survey-section .survey-form .survey-box .question-box .answers-box {
+  border-top: 1px solid rgba(221, 221, 221, 0.5);
+  padding: 11px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.survey-section .survey-form .survey-box .question-box .answers-box .answers-value {
+  margin: 10px;
+}
+
+.survey-section .survey-form .survey-box .question-box .answers-box .answers-value label {
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .order-md {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+@media (max-width: 772px) {
+  .width-center, .min-content .copany-img, .min-content .cherMan-massge .prag, .min-content .cherMan-massge .link-style, .min-content .cherMan-massge .header-container .lang-box .lang-link, .header-container .lang-box .min-content .cherMan-massge .lang-link, .min-content .cherMan-massge .logIn-form-box .logIn-form .form-group label, .min-content .logIn-form-box .logIn-form .form-group .cherMan-massge label, .min-content .logIn-form-box .logIn-form, .survey-section .intro-box .prag, .survey-section .intro-box .link-style, .survey-section .intro-box .header-container .lang-box .lang-link, .header-container .lang-box .survey-section .intro-box .lang-link, .survey-section .intro-box .min-content .logIn-form-box .logIn-form .form-group label, .min-content .logIn-form-box .logIn-form .form-group .survey-section .intro-box label {
+    width: 100%;
+  }
+  .prag, .link-style, .header-container .lang-box .lang-link, .min-content .logIn-form-box .logIn-form .form-group label {
+    font-size: 12px;
+  }
+  .min-content .logIn-form-box {
+    padding: 20px;
+  }
+  .min-content .logIn-form-box .title-box .title {
+    font-size: 22px;
+    padding-bottom: 23px;
+  }
+  .survey-section .intro-box .intro-text {
+    font-size: 20px;
+  }
+  .survey-section .survey-form .survey-box {
+    padding: 20px;
+  }
+  .survey-section .survey-form .survey-box::after {
+    display: none;
+  }
+  .survey-section .survey-form .survey-box .question-box .question-label-box {
+    padding: 10px;
+  }
+  .survey-section .survey-form .survey-box .question-box .question-label-box .prag, .survey-section .survey-form .survey-box .question-box .question-label-box .link-style, .survey-section .survey-form .survey-box .question-box .question-label-box .header-container .lang-box .lang-link, .header-container .lang-box .survey-section .survey-form .survey-box .question-box .question-label-box .lang-link, .survey-section .survey-form .survey-box .question-box .question-label-box .min-content .logIn-form-box .logIn-form .form-group label, .min-content .logIn-form-box .logIn-form .form-group .survey-section .survey-form .survey-box .question-box .question-label-box label {
+    font-size: 14px !important;
+  }
+  .survey-section .survey-form .survey-box .question-box:after {
+    width: 28px;
+  }
+  html[dir="ltr"] .survey-section .survey-form .survey-box .question-box:after {
+    left: -29px;
+  }
+  html[dir="rtl"] .survey-section .survey-form .survey-box .question-box:after {
+    right: -29px;
+  }
+}

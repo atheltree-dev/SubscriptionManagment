@@ -1,0 +1,197 @@
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: unset;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+body {
+    font-family: $min_font;
+    background: $min-color;
+    padding: 60px 40px;
+}
+
+.en_text {
+    font-family: $en_font;
+    font-weight: 600 !important;
+}
+
+
+
+.m_b10 {
+    margin: 0 0 10px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    border: 1px solid $black-color;
+
+    &:focus {
+        outline: none;
+        border: 1px solid $min-color;
+        box-shadow: unset !important;
+    }
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+    border-radius: 50px;
+
+    &:focus {
+        outline: none;
+        box-shadow: unset !important;
+    }
+}
+
+
+
+// logo-box
+
+.logo-box {
+    text-align: center;
+    padding: 0 0 20px;
+
+    .logo-link {
+        img {
+            height: 60px;
+        }
+    }
+}
+
+// logo-box
+
+// buttom_style
+
+.buttom_style {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid $min-color;
+    color: $white-color;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: $min-color;
+    margin: 10px 0 0;
+    @extend%trans-4;
+
+    i {
+        font-size: 14px;
+    }
+
+    &:hover {
+        color: $white-color;
+        background-color: $black-color;
+    }
+}
+
+// buttom_style
+
+
+
+
+.form_style {
+    // form-group
+
+    .form-group {
+        margin: 4px 0;
+
+        label {
+            display: block;
+            font-size: 14px;
+            color: $min-color;
+            font-weight: 500;
+            margin: 0 0 4px;
+        }
+    }
+
+    .dropify-wrapper {
+        height: 60px;
+
+        .dropify-wrapper {
+            height: 40px !important;
+        }
+
+    }
+}
+
+// form-group
+
+// select2
+
+.select2 {
+    width: 100% !important;
+}
+
+.select2-container {
+    .select2-selection--single {
+        height: 36px;
+        display: flex;
+        align-items: center;
+    }
+
+    .select2-selection__arrow {
+        top: 5px !important;
+    }
+}
+
+
+.pretty {
+    cursor: pointer;
+
+    .state {
+        label {
+
+            &:before,
+            &:after {
+                top: 0 !important;
+                html[lang="ar"] & {
+                    left: unset;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+.status_active {
+    color: $green-color;
+}
+
+.status_disactive {
+    color: $sub-color;
+}
+
+.status_inProssec {
+    color: $gold-color;
+}
+
+
+// links
+
+
+.small_link {
+    font-size: 12px;
+    font-weight: 400;
+    color: $sub_color;
+    font-family: $en_font;
+    @extend%trans-4;
+
+    &:hover {
+        color: $min-color;
+    }
+}

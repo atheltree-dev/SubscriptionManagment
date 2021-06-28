@@ -1,0 +1,60 @@
+.sucond_table {
+    margin: 0 0 20px;
+    tbody {
+        td {
+            background-color: $gray-color;
+            border: 1px solid #00000030;
+            border-collapse: collapse;
+            &.has_link{
+                background-color: transparent;
+                padding: 2px !important;
+            }
+        }
+    }
+}
+
+table.dataTable thead th, table.dataTable tfoot th ,table.dataTable tbody th, table.dataTable tbody td{
+    font-size: 13px;
+}
+
+.dataTables_wrapper {
+    overflow-x: auto;
+}
+
+td.details-control {
+    background: url("../img/details_open.png") no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url("../img/details_close.png") no-repeat center center;
+}
+
+.dataTable {
+    tr {
+        border-bottom:  1px solid #00000030;
+        .pop_up_opener {
+            cursor: pointer;
+
+            i {
+                color: $min-color;
+            }
+        }
+    }
+    .table_link{
+        font-size: 12px;
+        font-weight: 500;
+        color: $white-color;
+        background-color: $min-color;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 28px;
+        border-radius: 4px;
+        @extend%trans-4;
+        &:hover{
+            background-color: $sub-color;
+        }
+    }
+}
